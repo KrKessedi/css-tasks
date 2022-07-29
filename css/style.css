@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -155,7 +155,291 @@ button {
     button {
         font-size: 8px;
     }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
+.container {
+    width: 90%;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main p {
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 55px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.block__right {
+    width: 60%;
+}
+
+.block__left {
+    width: 40%;
+    background-color: #CCF0E6;
+
+
+}
+
+.block__left-inner {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.knopka img {
+    position: absolute;
+}
+
+.bcl {
+    left: 56.4%;
+    z-index: 1;
+    top: 52%;
+    width: 7%;
+}
+
+.krug {
+    z-index: 2;
+    width: 5.5%;
+    left: 57.1%;
+    top: 55.4%;
+}
+
+.vector {
+    z-index: 3;
+    width: 1.5%;
+    left: 59.3%;
+    top: 63%;
+}
+
+.block__left-text {
+    margin-bottom: 36px;
+    font-size: 21px;
+    width: 59%;
+    margin-top: 50px;
+    color: #486958;
+}
+
+.block__left-text-down {
+    color: #486958;
+    font-weight: 600;
+    margin-right: 42%;
+}
+
+@media all and (max-width: 1245px) {
+    .block__left-text {
+        margin-bottom: 18px;
+        font-size: 19px;
+    }
+}
+
+@media all and (max-width: 1130px) {
+    .block__left-text {
+        font-size: 16px;
+    }
+    .block__left-text-down {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width: 950px) {
+    h1 {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 21px;
+        margin-top: 24px;
+        margin-bottom: 39px;
+    }
+    .block__left-text {
+        font-size: 14px;
+    }
+    .block__left-text-down {
+        font-size: 11px;
+    }
+}
+
+@media all and (max-width:850px) {
+    .block__left-text {
+        margin-top: 30px;
+    } 
+}
+
+@media all and (max-width: 800px) {
+    .block__left-text {
+        font-size: 12px;
+    }
+    .block__left-text-down {
+        margin-right: 40%;
+    }
+    h1 {
+        font-size: 33px;
+    }
+    .main p {
+        font-size: 17px;
+        margin-top: 17px;
+        margin-bottom: 28px;
+    }
+}
+
+@media all and (max-width: 712px) {
+    .block__left-text {
+        font-size: 11px;
+        margin-top: 26px;
+    }
+    .block__left-text-down {
+        margin-right: 38%;
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 653px) {
+    .block__left-text {
+        font-size: 10px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+}
+
+@media all and (max-width: 594px) {
+    .block__left-text {
+        font-size: 9px;
+        margin-top: 18px;
+        margin-bottom: 11px;
+    }
+    .block__left-text-down {
+        font-size: 8px;
+    }
+}
+
+@media all and (max-width: 533px) {
+    .block__left-text {
+        width: 66%;
+    }
+    .block__left-text-down {
+        margin-right: 43%;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .main p {
+        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 22px;
+    }
+}
+
+@media all and (max-width: 477px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block__right {
+        width: 100%;
+    }
+
+    .block__left {
+        width: 100%;
+    }
+    .bcl {
+        left: 90%;
+        z-index: 1;
+        top: 60%;
+        width: 7%;
+    }
+    
+    .krug {
+        z-index: 2;
+        width: 5.5%;
+        left: 90.8%;
+        top: 61.5%;
+    }
+    
+    .vector {
+        z-index: 3;
+        width: 1.5%;
+        left: 92.9%;
+        top: 65%;
+    }
+    .block__left-text-down {
+        margin-right: 83%;
+        margin-bottom: 3%;
+    }
+    .block__left-text {
+        width: 92%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .bcl {
+        top: 56%;
+    }
+    .krug {
+        top: 57.5%;
+    }
+    .vector {
+        top: 60%;
+    }
+    .block__left-text-down {
+        margin-right: 80%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .main p {
+        font-size: 11px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 377px) {
+
+
+}
+
+@media all and (max-width: 320px) {
+    .block__left-text {
+        margin-top: 13px;
+        margin-bottom: 8px;
+    }
+    .block__left-text-down {
+        margin-right: 77%;
+    }
+}
+
+
 
 
 
